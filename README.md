@@ -2,15 +2,15 @@
 
 <img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800"/>
 
-## The main steps of the master thesis are: 
-  1) Tampere-WaterSeg dataset is chosen as the use case (or target domain).
-  2) Using the Supervised Learning method, the established segmentation models (e.g., PSPNet/UNet) are trained with Tampere-WaterSeg dataset and evaluated accordingly.
-  3) The human annotation cost is the fundamental problem for the semantic segmentation tasks. Therefore, the research is performed on "if an established Unsupervised Domain Adaptation (UDA) with adversarial learning method can be applied to the water segmentation task"; note that there is no need for any labeled/annotated data in the target domain for training the network. 
-  4) Two types of UDA approaches are tested: 
-  5) 
-  6) With this method, it is assumed that 
-  7) 
-  8) it is assumed that there is no any data in the target domain for training the segmentation network. So, an Unsupervised Domain Adaptation with adversarial learning method is used. With this method, the models are trained with another but similar datasets, such as MaSTr1325 (single source domain adaptation), MaSTr1325 + WaterDataset (ADE20K + RiverDataset). During training, the learned knowledge is adapted to the target domain (Tampere-WaterSeg).  
-  9) 
 
-with Tampere-WaterSeg, WaterDataset 
+ ## Note: 
+ 1) Supervised Learning method is more accurate but very costly (annotation cost). Therefore, an unsupervised domain adaptation technique can be used to train the network in another but similar datasets (source domain) and the obtained knowledge can be adapted to the target domain during training.
+ 2) Tampere-WaterSeg is our use case (or target domain), while other similar and already labeled datasets (e.g., WaterDataset, MaSTr-1325, etc) are the target domain.
+
+## The explanation of the results given above: 
+  1) Supervised: The segmentation model is trained and tested with Tampere-WaterSeg (costly; annotation cost).
+  2) Single-NoDA: No domain adaptation method is applied. The segmentation model is trained with MaSTr-1325 dataset and evaluated with Tampere-WaterSeg dataset.
+  3) Single-UDA: Single source unsupervised domain adaptation: The model is trained with MaSTr-1325 dataset (source domain) and the acquired knowledge is adapted to the target domain (Tampere-WaterSeg) during training.
+  4) Multi-NoDA: No domain adaptation method is applied. The segmentation model is trained with MaSTr-1325 and WaterDataset (ADE20K + RiverDataset) datasets and evaluated with Tampere-WaterSeg dataset.
+  5) Multi-UDA: Multi source unsupervised domain adaptation: The model is trained with MaSTr-1325 and WaterDataset (ADE20K + RiverDataset) datasets and the acquired knowledge is adapted to the target domain (Tampere-WaterSeg) during training.
+  
