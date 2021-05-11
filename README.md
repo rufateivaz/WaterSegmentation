@@ -4,7 +4,7 @@
 
 
  ## Note: 
- 1) Supervised Learning method is more accurate but very costly (annotation cost). Therefore, an unsupervised domain adaptation technique can be used to train the network in another but similar datasets (source domain) and the obtained knowledge can be adapted to the target domain during training.
+ 1) Supervised Learning method is more accurate but very costly (annotation cost). Therefore, an unsupervised domain adaptation technique can be used to train the network with another but similar datasets (source domain) and the obtained knowledge can be adapted to the target domain during training.
  2) Tampere-WaterSeg is our use case (or target domain), while other similar and already labeled datasets (e.g., WaterDataset, MaSTr-1325, etc) are the target domain.
 
 ## The explanation of the results given above: 
