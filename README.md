@@ -1,2 +1,2 @@
-# Student_WS2020_WaterSegmentation
+# Water Segmentation for Autonomous Maritime Vehicles
 
