@@ -2,7 +2,7 @@
 
 ## Keywords: Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning.
 
-In Semantic Segmentation tasks, providing datasets for the target domain is expensive due to the pixel-level annotation cost. To reduce the annotation/labeling cost, one possible approach should be training the network with another but similar and already labeled dataset(s). However, in this case, the performance of the model in the target domain will more likely be poor because of the distinctions in the appearences of two domains. This is called <b>Domain Shift</b> problem. 
+In Semantic Segmentation tasks, providing datasets for the target domain is expensive (high pixel-level annotation cost). To reduce the annotation/labeling cost, one possible approach should be training the network with another but similar and already labeled dataset(s). However, in this case, the performance of the model in the target domain will more likely be poor because of the distinctions in the appearences of two domains. This is called <b>Domain Shift</b> problem. 
 
 The domain shift problem can be tackled by <b>Domain Adaptation</b> techniques. These techniques have been applied to road scene segmentation tasks, but there is no any work applying them to the water segmentation tasks, which we are doing and researching in our master thesis. 
 
