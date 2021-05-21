@@ -1,12 +1,31 @@
 # Master Thesis - Water Segmentation for Autonomous Maritime Vehicles
 
-## Keywords: Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning.
+## Keywords: Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning, PSPNet, UNet.
+
+## Idea: 
+We believe that if a maritime vehicle has a perception abilitiy such that, it can distinguish water objects from non-water ones, then they can autonomously operate on the water surface while there is no any other obstacle around (stop/slow down otherwise).
 
 ## About
-In Semantic Segmentation tasks, providing datasets for the target domain is expensive (high pixel-level annotation cost). To reduce the annotation/labeling cost, one possible approach should be training the network with another but similar and already labeled dataset(s). However, in this case, the performance of the model in the target domain will more likely be poor because of the environmental distinctions of two domains. This is called <b>Domain Shift</b> problem. The domain shift problem can be tackled by <b>Domain Adaptation</b> techniques. These techniques have been applied to road scene segmentation tasks, but none of them has been implemented to reduce the annotation cost in water segmentation tasks. 
+In Semantic Segmentation tasks, providing datasets for the target domain is expensive (high pixel-level annotation cost). To reduce the annotation/labeling cost, one possible approach should be training the network with another but similar and already labeled dataset(s). However, in this case, the performance of the model in the target domain will more likely be poor because of the environmental distinctions of two domains. This is called <b>Domain Shift</b> problem. This problem can be tackled by <b>Domain Adaptation</b> techniques. These techniques have been applied to road scene segmentation tasks, but none of them has been implemented to reduce the annotation cost in water segmentation tasks. 
 
-On the other hand, in our master thesis, our main research focus is on "if an Unsupervised Domain Adaptation with Adversarial Learning method can be applied to our Water Segmentation task". 
+On the other hand, with our master thesis, we contribute our research that focuses on "if an Unsupervised Domain Adaptation with Adversarial Learning method can be applied to our Water Segmentation task". 
 
+## Target Domain
+We use Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data from three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake. 
+
+## Supervised Learning
+Using the Tampere-WaterSeg dataset, we train the segmentation networks (UNet and PSPNet) and evaluate their performances; we want to understand which scanario (open, dock or channel) is challenging/easiest for the water segmentation tasks. We show that the open scenario is the easiest scenario for segmenting water from non-water objects, while the docking scenario is the hardest, followed by the channel scenario.  
+
+## Source Domain
+1) Single-source Domain: MaSTr-1325 dataset is used as the source domain. Note that there are four labels in this dataset, but we change the number of labeles to two because our task is binary pixel-level classification. 
+2) Multi-source Domain 
+We use Mastr-1325 dataset 
+
+## Unsupervised Domain Adaptation with Adversarial Learning Method
+
+
+## Source Domain
+We use MaSTr-1325 dataset alone as the source domain and we appyly Single-source unsupervised domain
 
 <img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800"/>
 
