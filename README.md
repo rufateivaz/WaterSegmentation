@@ -10,11 +10,14 @@ In Semantic Segmentation tasks, providing datasets for the target domain is expe
 
 On the other hand, the our master thesis primarily focuses on "if an Unsupervised Domain Adaptation with Adversarial Learning method can be applied to our Water Segmentation task". This is the main contribution of the thesis.  
 
-## Target Domain
-We use publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data of three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake. 
 
 ## Analyzing the challenging and easiest scenarios. 
+
 ### Supervised Learning
+
+#### Target Domain
+We use publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data of three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake.
+
 By using the Tampere-WaterSeg dataset, we train the segmentation networks (UNet and PSPNet) and evaluate their performances; we want to understand which scanario (open, dock or channel) is challenging/easiest for the water segmentation tasks. We show that the open scenario is the easiest scenario for segmenting water from non-water objects, while the docking is the hardest, followed by the channel.  
 
 ## Source Domain
