@@ -1,6 +1,7 @@
 # Master Thesis - Water Segmentation for Autonomous Maritime Vehicles
 
-### Keywords: Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning, PSPNet, UNet.
+### Keywords: 
+Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning, PSPNet, UNet.
 
 ## Idea: 
 Currently, there is no any autonomous maritime vehicle that can operate on the water surface without human supervision. To provide secure navigation for the autonomous maritime vehicles, one important task might be being able to detect and recognize large variety of objects (e.g., fishes, maritime signs, different types of boats, etc) on the water surface. 
