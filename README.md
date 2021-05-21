@@ -36,6 +36,6 @@ We use Mastr-1325 dataset
 
 ## Example results of Supervised Learning, Unsupervised Domain Adaptation (single-source and multi-source) and no adaptation.
 <p align="center">
-  <img width="600" height="800" src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg">
+  <img width="800" height="1200" src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg">
 </p>
   
