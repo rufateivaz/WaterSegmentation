@@ -17,18 +17,14 @@ On the other hand, the our master thesis primarily focuses on "if an Unsupervise
 ## Pipeline
 The operations, followed in the master thesis are listed as below:
 1) We select publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the **target domain**. This dataset includes the data of three distinct scenarios: **open**- the boat operates on the open water surface of a lake in Nordic environment, **dock** - the boat operates on the lake but very close to the coastline and **channel** - the boat operates on a channel, where the environment is different than that of the lake.
-2) We analyze which scenarios are difficult for our water segmentation task. For this, we train the models (UNet and PSPNet) with the Tampere-WaterSeg dataset and evaluate their performances accordingly. Based on the obtained results, we decide that the **open** is the easiest and **dock** is the most challenging scenarios for segmenting water pixels from non-water ones. During our analyzes, we also not that we achieve a good segmentation score with the Supervised Learning method, which is more than 0.98
-3) 
-
-
-with the Supervised Learning method, the Tampere-WaterSeg dataset is used to train the segmentation models (UNet and PSPNet). Then, based on the evaluated performances, we decide that **open** is the easiest and the **docking** is the hardest scenarios for segmenting water from non-water objects. 
-5) We show that the performance 
-6) By observing the performances of the models on the distinct scenarios, we show that open scenario is the easiest scenario, while docking scenario is the hardest one.
-
+2) We analyze which scenarios are difficult for our water segmentation task. For this, we train the segmentation models (UNet and PSPNet) with the Tampere-WaterSeg dataset and evaluate their performances accordingly. Based on the obtained results, we show that the **open** is the easiest and **dock** is the most challenging scenarios for segmenting water pixels from non-water ones. During our analyzes, we acquire a good segmentation score (0.9878) with the Supervised Learning method. However, this score is achieved with high annotation cost. Therefore, we aim to apply an established Unsupervised Domain Adaptation with adversarial learning method to our water segmentation task. The applied adversarial learning focuses on the output space rather than the future space, as the segmentation network can generate more similarities in the output space compare to the future space.
+6) Firstly, we train our network with MaSTr-1325 dataset and adapt the obtained knowledge to the target domain during training. We call this single-source domain adaptation: SingleDA  
+7) as the output space includes more similarities between the source and target domains. 
+8) 
 
 ## Analyzing how effective is apply an establisehd Unsupervised Domain Adaptation with Adversarial Learning method to the water segmentation task.  
 In the source domain, we use two publicly available datasets: MaSTr-1325 Dataset and WaterDataset. 
-MaSTr-1325 dataset is used as the source domain. Note that there are four labels (water, sky, environment and others) in this dataset, but we change the number of labeles into two (water and non-water), because our task is binary pixel-level classification.
+MaSTr-1325 dataset is used as the source domain. 
 
 ## Comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
 <img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png"/>
