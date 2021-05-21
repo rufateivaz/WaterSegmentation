@@ -13,14 +13,13 @@ On the other hand, the our master thesis primarily focuses on "if an Unsupervise
 
 ## Analyzing the challenging and easiest scenarios. 
 
-### Supervised Learning
-
-#### Target Domain
+### Target Domain
 We use publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data of three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake.
 
+### Supervised Learning
 By using the Tampere-WaterSeg dataset, we train the segmentation networks (UNet and PSPNet) and evaluate their performances; we want to understand which scanario (open, dock or channel) is challenging/easiest for the water segmentation tasks. We show that the open scenario is the easiest scenario for segmenting water from non-water objects, while the docking is the hardest, followed by the channel.  
 
-## Source Domain
+## Analyzing how effective is apply an establisehd Unsupervised Domain Adaptation with Adversarial Learning method to the water segmentation task.  
 In the source domain, we use two publicly available datasets: MaSTr-1325 Dataset and WaterDataset. 
 MaSTr-1325 dataset is used as the source domain. Note that there are four labels (water, sky, environment and others) in this dataset, but we change the number of labeles into two (water and non-water), because our task is binary pixel-level classification.
 
