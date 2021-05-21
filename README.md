@@ -1,4 +1,4 @@
-# Master Thesis - Water Segmentation for Autonomous Maritime Vehicles
+# Master Thesis: Water Segmentation for Autonomous Maritime Vehicles
 
 ### Keywords: 
 Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning, PSPNet, UNet.
