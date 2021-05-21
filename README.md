@@ -3,6 +3,13 @@
 #### Keywords: 
 Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adversarial Learning, PSPNet, UNet.
 
+
+### Example Results.
+<p align="center">
+  <img width="800" height="1200" src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg">
+</p>
+
+
 ### Idea: 
 Currently, there is no any autonomous maritime vehicle that can operate on the water surface without human supervision. To provide secure navigation for the autonomous maritime vehicles, one important task might be being able to detect and recognize large variety of objects (e.g., fishes, maritime signs, different types of boats, etc) on the water surface. 
 
@@ -25,9 +32,4 @@ The operations, followed in the master thesis are listed as below:
 
 ### Comparison Table
 <img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png"/>
-
-### Example Results.
-<p align="center">
-  <img width="800" height="1200" src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg">
-</p>
   
