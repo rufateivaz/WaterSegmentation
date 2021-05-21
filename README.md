@@ -31,5 +31,5 @@ The operations, followed in the master thesis are listed as below:
 8) Finally, we compare the acquired results with three distinct approaches: Supervised Learning, Single-UDA, Multi-UDA. Note that **NoDA** means "no domain adaptation is performed".
 
 ### Comparison Table
-<img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png" width="600" height="300"/>
+<img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png" width="600" height="400"/>
   
