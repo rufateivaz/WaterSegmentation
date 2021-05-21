@@ -23,10 +23,10 @@ The operations, followed in the master thesis are listed as below:
 7) Secondly, we repeat step (6) but we use two distinct datasets in the source domain for trainin the network: MaSTr-1325 and WaterDataset. We call this approach a single-source domain adaptation: **Multi-UDA**. 
 8) Finally, we compare the acquired results with three distinct approaches: Supervised Learning, Single-UDA, Multi-UDA. Note that **NoDA** means "no domain adaptation is performed".
 
-### Comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
+### Comparison Table
 <img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png"/>
 
-### Example results of Supervised Learning, Unsupervised Domain Adaptation (single-source and multi-source) and no adaptation.
+### Example Results.
 <p align="center">
   <img width="800" height="1200" src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg">
 </p>
