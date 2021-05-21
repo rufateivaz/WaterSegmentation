@@ -34,7 +34,7 @@ We use Mastr-1325 dataset
 ## Comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
 <img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png"/>
 
-## Visual comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
-<img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800"/>
+## Example results of Supervised Learning, Unsupervised Domain Adaptation (single-source and multi-source) and no adaptation.
+<img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800" class="center"/>
 
   
