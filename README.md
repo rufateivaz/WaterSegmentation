@@ -13,7 +13,7 @@ Supervised Learning, Semantic Segmentation, Unsupervised Domain Adaptation, Adve
 ### Idea: 
 Currently, there is no any autonomous maritime vehicle that can operate on the water surface without human supervision. To provide secure navigation for the autonomous maritime vehicles, one important task might be being able to detect and recognize large variety of objects (e.g., fishes, maritime signs, different types of boats, etc) on the water surface. 
 
-The main address of this thesis is **water segmentation** for autonomous maritime vehicles, which can be considered as a secure task. It simply allows discriminating water from all other non-water objects. Consequently, the boat can move forward in open water case through planned route and stop/slow down in all other cases to reduce the risk of dangerous accident.
+The main address of this thesis is **water segmentation** for autonomous maritime vehicles, which can be considered as a secure task. It allows discriminating water from all other non-water objects. Consequently, the boat can move forward in open water case through planned route and stop/slow down in all other cases to reduce the risk of dangerous accident.
 
 
 ### Definition
