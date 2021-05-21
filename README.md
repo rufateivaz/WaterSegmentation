@@ -11,13 +11,13 @@ In Semantic Segmentation tasks, providing datasets for the target domain is expe
 On the other hand, the our master thesis primarily focuses on "if an Unsupervised Domain Adaptation with Adversarial Learning method can be applied to our Water Segmentation task". This is the main contribution of the thesis.  
 
 
-## Analyzing the challenging and easiest scenarios. 
+## Operations
+The operations, followed in the master thesis are listed as below:
+1) We select publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data of three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake.
+2) Firstly, with the Supervised Learning method, the Tampere-WaterSeg dataset is used to train the segmentation models (UNet and PSPNet). Then, based on the evaluated performances, we decide that <b>open</b> is the easiest and the <b>docking</b> is the hardest scenarios for segmenting water from non-water objects. 
+3) We show that the performance 
+4) By observing the performances of the models on the distinct scenarios, we show that open scenario is the easiest scenario, while docking scenario is the hardest one.
 
-### Target Domain
-We use publicly available Tampere-WaterSeg dataset as our use case; i.e., it is the target domain. This dataset includes the data of three distinct scenarios: <b>open</b> - the boat operates on the open water surface of a Lake in Nordic environment, <b>dock</b> - the boat operates on the Lake but very close to the coastline and <b>channel</b> - the boat operates on a channel, where the environment is different than that of the lake.
-
-### Supervised Learning
-By using the Tampere-WaterSeg dataset, we train the segmentation networks (UNet and PSPNet) and evaluate their performances; we want to understand which scanario (open, dock or channel) is challenging/easiest for the water segmentation tasks. We show that the open scenario is the easiest scenario for segmenting water from non-water objects, while the docking is the hardest, followed by the channel.  
 
 ## Analyzing how effective is apply an establisehd Unsupervised Domain Adaptation with Adversarial Learning method to the water segmentation task.  
 In the source domain, we use two publicly available datasets: MaSTr-1325 Dataset and WaterDataset. 
@@ -31,21 +31,10 @@ We use Mastr-1325 dataset
 ## Unsupervised Domain Adaptation with Adversarial Learning Method
 
 
-## Source Domain
-We use MaSTr-1325 dataset alone as the source domain and we appyly Single-source unsupervised domain
-
-<img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800"/>
-
+## Comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
 <img src="https://user-images.githubusercontent.com/25903137/119140414-6af64900-ba44-11eb-831c-aa4d35c51337.png"/>
 
- ## Note: 
- 1) Supervised Learning method is more accurate but very costly (annotation cost). Therefore, an unsupervised domain adaptation technique can be used to train the network with another but similar datasets (source domain) and the obtained knowledge can be adapted to the target domain during training.
- 2) Tampere-WaterSeg is our use case (or target domain), while the source domain includes another but similar and already labeled datasets (e.g., WaterDataset, MaSTr-1325, etc).
+## Visual comparison of the performance results acquired with Supervised Learning and Unsupervised Domain Adaptation
+<img src="https://user-images.githubusercontent.com/25903137/117814527-b64e7180-b264-11eb-8209-3271850e701e.jpg" width="600" height="800"/>
 
-## The explanation of the results given above: 
-  1) Supervised: The segmentation model is trained and tested with Tampere-WaterSeg (costly; annotation cost).
-  2) Single-NoDA: No domain adaptation method is applied. The segmentation model is trained with MaSTr-1325 dataset and evaluated with Tampere-WaterSeg dataset.
-  3) Single-UDA: Single source unsupervised domain adaptation: The model is trained with MaSTr-1325 dataset (source domain) and the acquired knowledge is adapted to the target domain (Tampere-WaterSeg) during training.
-  4) Multi-NoDA: No domain adaptation method is applied. The segmentation model is trained with MaSTr-1325 and WaterDataset (ADE20K + RiverDataset) datasets and evaluated with Tampere-WaterSeg dataset.
-  5) Multi-UDA: Multi source unsupervised domain adaptation: The model is trained with MaSTr-1325 and WaterDataset (ADE20K + RiverDataset) datasets and the acquired knowledge is adapted to the target domain (Tampere-WaterSeg) during training.
   
